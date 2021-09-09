@@ -18,7 +18,6 @@ public class VendedorController {
 	@Autowired
 	private VendedorService service;
 	
-	
 	@GetMapping
 	public ResponseEntity<List<VendedorDTO>> findAll() {
 		List<VendedorDTO> lista = service.findAll();
