@@ -14,7 +14,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_sales")
-public class Venda {
+public class Sale {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,10 +29,10 @@ public class Venda {
 	private Vendedor seller;
 	
 	
-	public Venda() {
+	public Sale() {
 	}
 	
-	public Venda(Long id, Integer visitados, Integer fechados, Double quantiaVendida, LocalDate data, Vendedor vendedor) {
+	public Sale(Long id, Integer visitados, Integer fechados, Double quantiaVendida, LocalDate data, Vendedor vendedor) {
 		this.id = id;
 		this.visited = visitados;
 		this.deals = fechados;

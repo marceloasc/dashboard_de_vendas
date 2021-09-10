@@ -3,7 +3,7 @@ package com.project.dsvendas.dto;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-import com.project.dsvendas.entities.Venda;
+import com.project.dsvendas.entities.Sale;
 
 public class VendaDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -29,7 +29,7 @@ public class VendaDTO implements Serializable {
 		this.vendedor = vendedor;
 	}
 	
-	public VendaDTO(Venda entity) {
+	public VendaDTO(Sale entity) {
 		this.id = entity.getId();
 		this.visited = entity.getVisited();
 		this.deals = entity.getDeals();
